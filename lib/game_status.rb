@@ -162,5 +162,14 @@ def over?(board)
 end
 
 def winner(board)
-  if (
+  count_x = 0
+  count_o = 0
+  if board.any? { |space| space == "X" }
+    count_x += 1
+  elsif board.any? { |space| space == "O" }
+    count_o += 0
+  else
+    count_x += 0
+    count_o += 0
+  end
 end

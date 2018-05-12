@@ -157,7 +157,7 @@ def over?(board)
   elsif draw?(board)
     return true
   elsif !won?(board) && full?(board)
-    
+    return true
   elsif won?(board) && !full?(board)
     return true
   elsif !full?(board) && !won?(board)

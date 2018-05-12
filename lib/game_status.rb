@@ -137,6 +137,6 @@ end
 
 def full?(board)
   board.any? |space| do
-    return true
+    space == " "
   end
 end

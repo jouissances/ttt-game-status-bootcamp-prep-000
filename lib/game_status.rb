@@ -164,5 +164,38 @@ def over?(board)
 end
 
 def winner(board)
-
+    if position_1 == "X" && position_2 == "X" && position_3 == "X"
+      return "X"
+    elsif position_4 == "X" && position_5 == "X" && position_6 == "X"
+      return "X"
+    elsif position_7 == "X" && position_8 == "X" && position_9 == "X"
+      return "X"
+    elsif position_1 == "X" && position_5 == "X" && position_9 == "X"
+      return "X"
+    elsif position_3 == "X" && position_5 == "X" && position_7 == "X"
+      return "X"
+    elsif position_1 == "X" && position_4 == "X" && position_7 == "X"
+      return "X"
+    elsif position_2 == "X" && position_5 == "X" && position_8 == "X"
+      return "X"
+    elsif position_3 == "X" && position_6 == "X" && position_9 == "X"
+      return "X"
+    elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
+      return "O"
+    elsif position_4 == "O" && position_5 == "O" && position_6 == "O"
+      return "O"
+    elsif position_7 == "O" && position_8 == "O" && position_9 == "O"
+      return "O"
+    elsif position_1 == "O" && position_5 == "O" && position_9 == "O"
+      return "O"
+    elsif position_3 == "O" && position_5 == "O" && position_7 == "O"
+      return "O"
+    elsif position_1 == "O" && position_4 == "O" && position_7 == "O"
+      return "O"
+    elsif position_2 == "O" && position_5 == "O" && position_8 == "O"
+      return "O"
+    elsif position_3 == "O" && position_6 == "O" && position_9 == "O"
+      return "O"
+    else
+      return false
 end

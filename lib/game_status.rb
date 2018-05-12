@@ -207,6 +207,6 @@ def winner(board)
     elsif position_3 == "O" && position_6 == "O" && position_9 == "O"
       return "O"
     else
-      return false
+      return nil
     end
 end

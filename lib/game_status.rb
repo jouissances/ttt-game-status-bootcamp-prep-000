@@ -136,5 +136,7 @@ def won?(board)
 end
 
 def full?(board)
-  board.any? |space| {
+  board.any? |space| do
+    return true
+  end
 end

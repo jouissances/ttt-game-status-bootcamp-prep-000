@@ -158,7 +158,9 @@ def over?(board)
     return true
   elsif full?(board) == true && won?(board) == false
     return true
-  elsif full?(board) == true && d?(board) == true
+  elsif full?(board) == true && draw?(board) == true
+    return true
+  elsif full?(board) == true && draw?(board) == false
     return true
   else 
     return false  

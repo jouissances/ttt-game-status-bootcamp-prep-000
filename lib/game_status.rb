@@ -163,7 +163,7 @@ def over?(board)
   elsif full?(board) == true && draw?(board) == false
     return true
   else 
-    return false  
+    return false
   end
 end
 

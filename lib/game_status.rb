@@ -146,6 +146,15 @@ def draw?(board)
     return false
   elsif won?(board) == true
     return false
+  else 
+    return false
   end
 end
 
+def over?(board)
+  if won?(board) == true || draw?(board) == true || full?(board) == true
+    return true
+  else 
+    return false  
+  end
+end

@@ -172,4 +172,11 @@ def winner(board)
     count_x += 0
     count_o += 0
   end
+  if count_o > count_x && won?(board) == true
+    return "O"
+  elsif count_x > count_o && won?(board) == true  
+    return "X"
+  else 
+    return nil
+  end
 end
